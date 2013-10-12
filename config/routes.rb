@@ -3,7 +3,8 @@ Nccu2hand::Application.routes.draw do
 
   # root :to => 'high_voltage/pages#show', :id => 'welcome'
   root :to => 'items#index'
-
+  match '/dashboard' => 'items#dashboard' 
+  
   resources :items
-    match '/new' => 'items#new'
+
 end

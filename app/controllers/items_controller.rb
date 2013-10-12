@@ -21,6 +21,10 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
   end 
   
+  def dashboard
+    @items = Item.where(user_id: current_user.id)   
+  end  
+
   def destroy
     @item = Item.find(params[:id])
     @item.destroy
