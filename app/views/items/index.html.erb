@@ -29,5 +29,10 @@
 		  </div>
 	  	</ul>
 	</div> -->
-	<%= render :partial=>"items/item", :collection => @items, :as => :item %>
+  <div class="span12">
+  <ul>
+		<div class="items">
+	 <%= render :partial=>"items/item", :collection => @items, :as => :item %>
+  </ul>
+	</div>
 <% end %>

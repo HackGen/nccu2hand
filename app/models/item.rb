@@ -8,4 +8,6 @@ class Item < ActiveRecord::Base
   validates :status, presence: true
   validates :price, presence: true
   validates :description, presence: true
+
+  default_scope -> { order('created_at DESC') }
 end
