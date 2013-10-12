@@ -5,3 +5,4 @@ en:
   hello: "Hello world"
 item:
   create_time: 'Create time'
+  is_interested: 'Is interested'
