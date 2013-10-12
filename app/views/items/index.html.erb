@@ -9,11 +9,10 @@
 	</div>
 <% else %>
   <div class="span12">
-  <%= link_to "test", '#',class: "btn btn-info" %>
-  <%= link_to "test2", '#',class: "btn btn-info" %>
+  <%= render :partial => "items/category", :collection => @categories, :as => :category %>
   <ul>
 		<div class="items">
-		<% if not @items.empty? %>
+		<% if not @items.empty? %>	 		
 	 		<%= render :partial => "items/item", :collection => @items, :as => :item %>
 		<% else %>
 			<h3>目前還未有上架商品</h3>

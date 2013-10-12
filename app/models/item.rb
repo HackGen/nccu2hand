@@ -21,5 +21,11 @@ class Item < ActiveRecord::Base
       find(:all)
     end
   end 
+
+  def self.category_search(id)
+    if id
+      where(:category_id => id)
+    end
+  end 
   
 end
