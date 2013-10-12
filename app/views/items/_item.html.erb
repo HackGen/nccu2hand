@@ -1,6 +1,6 @@
 <li>
   <div class="media">
-  <%= link_to image_tag(item.photo_url(:thumb), class: "media-object thumbnail pull-left") %>
+  <%= link_to image_tag(item.photo_url(:thumb), class: "media-object thumbnail pull-left"), item_path(item) %>
    <div class="media-body"> 
   <span class="media-heading">[物品] <%= item.title %></span>
   <span class="condition">[狀況] <%= item.status %></span>

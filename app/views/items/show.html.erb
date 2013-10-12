@@ -1,7 +1,7 @@
 <div class="span10">
   <table class="table">  
     <tr>
-      <td></td><td><%= image_tag('sample.jpeg', class: "media-object thumbnail pull-left", size: '100X100') %></td>  
+      <td></td><td><%= image_tag(@item.photo_url, class: "media-object thumbnail pull-left", size: '100X100') %></td>  
     </tr>
     <tr>
       <td>物品</td><td><%= @item.title %></td>   
