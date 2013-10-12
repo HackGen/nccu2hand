@@ -1,0 +1,11 @@
+  <div class="span12">
+	  <ul>
+			<div class="items">
+			<% if not @items.empty? %>
+		 		<%= render :partial => "items/item", :collection => @items, :as => :item %>
+			<% else %>
+				<h3>目前還未新增商品</h3>
+			<% end %>
+		 	</div>
+	  </ul>
+  </div>
