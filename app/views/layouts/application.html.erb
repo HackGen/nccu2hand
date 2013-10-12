@@ -24,15 +24,13 @@
   <div class="container">
 
       <%= notice_message %>
-
-      <div class="content">
+      <div class="content">   
         <div class="row">
           <%= yield %>
           <%= yield (:sidebar) %>
         </div> 
-    
       </div>
-
+      
       <%= render :partial => "common/footer" %>    
   </div>
 
