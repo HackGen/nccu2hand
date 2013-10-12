@@ -1,22 +1,22 @@
-<div class="span10">
-  <table class="table">  
+<div class="span12">
+  <table class="table table-hover">  
     <tr>
-      <td></td><td><%= image_tag(@item.photo_url, class: "media-object thumbnail pull-left", size: '100X100') %></td>  
+      <th>商品圖</th><td><%= image_tag(@item.photo_url, class: "media-object thumbnail pull-left", size: '100X100') %></td>  
     </tr>
     <tr>
-      <td>物品</td><td><%= @item.title %></td>   
+      <th>物品</th><td><%= @item.title %></td>   
     </tr>
     <tr>
-      <td>狀況</td><td><%= @item.status %></td>
+      <th>狀況</th><td><%= @item.status %></td>
     </tr>
     <tr>
-      <td>預售金額</td><td><%= @item.price %></td>
+      <th>預售金額</th><td><%= @item.price %></td>
     </tr>  
     <tr>
-      <td>補充</td><td><%= truncate(@item.description, length: 50) %></td>
+      <th>補充</th><td><%= truncate(@item.description, length: 50) %></td>
     </tr>
     <tr>
-      <td>張貼時間</td><td><%= time_ago_in_words(@item.created_at) %></td>
+      <th>張貼時間</th><td><%= time_ago_in_words(@item.created_at) %></td>
     </tr>
   </table>
 </div>
