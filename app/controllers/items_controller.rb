@@ -1,4 +1,5 @@
 class ItemsController < ApplicationController
+  
   def index
     @items = Item.all
   end
@@ -27,5 +28,4 @@ class ItemsController < ApplicationController
 
     redirect_to :root
   end  
-
 end
