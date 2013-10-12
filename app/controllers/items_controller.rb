@@ -8,9 +8,12 @@ class ItemsController < ApplicationController
 
   def create
     @item = current_user.items.build(params[:item])
-    @item.save!
-
-    redirect_to :root
+    
+    if @item.save
+      redirect_to :root
+    else
+      render 'new'
+    end
   end
   
   def show
