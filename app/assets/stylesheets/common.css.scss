@@ -27,3 +27,37 @@
 .group {
    zoom: 1; /* IE6&7 */
 }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: \5FAE\8EDF\6B63\9ED1\9AD4, Microsoft JhengHei, MingLiU, sans-serif;
+}
+
+body {
+  background-image: url('ricepaper_v3.png');
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  margin: 30px 0;
+  text-align: center;
+  background-image: url('Hardware-CPU.jpg');
+  color: white;
+  height: 500px;
+}
+.jumbotron h1 {
+  font-size: 72px;
+  line-height: 1;
+  padding-top: 305px;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+.custom-hero {
+  border-radius: 0;
+  color: black;
+}

@@ -1,3 +1,6 @@
+### NCCU2HAND
+
+This is a Second Hand Trading Store Prototype for NCCU.
 
 ### Style Guides
 
