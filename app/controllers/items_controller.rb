@@ -1,8 +1,17 @@
 class ItemsController < ApplicationController
   
   def index
-    @items = Item.all
+    @categories = Category.all
+    if params[:tag]
+      @items = Item.category_search(params[:tag])
+    else  
+      @items = Item.search(params[:search])
+    end
   end
+  
+  def categories
+    @categories = Category.search(params[:tag])
+  end 
 
   def new
     @item = current_user.items.build

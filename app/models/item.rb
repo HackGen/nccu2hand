@@ -27,4 +27,18 @@ class Item < ActiveRecord::Base
   def unfollow_by!(other_user)
     relationships.find_by_followed_id(other_user.id).destroy
   end
+    
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['title LIKE ?', "%#{search}%"])
+    else
+      find(:all)
+    end
+  end 
+
+  def self.category_search(id)
+    if id
+      where(:category_id => id)
+    end
+  end 
 end
