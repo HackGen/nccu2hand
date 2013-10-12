@@ -1,7 +1,3 @@
-<div class="span8">
-<%= simple_form_for @item, :url => { :action => "create" }, :html => {:class => ""} do |f| %>
-  <%= f.input :title, label: "title" %>
-  <%= f.input :description, label: "description"%>
-  <%= f.button :submit %>
-<% end %>
+<div class="span12">
+  <%= render 'form' %>
 </div>
