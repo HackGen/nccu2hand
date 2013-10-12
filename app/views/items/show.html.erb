@@ -1,22 +1,22 @@
 <div class="span12">
   <table class="table table-hover">  
     <tr>
-      <th>商品圖</th><td><%= image_tag(@item.photo_url, class: "media-object thumbnail pull-left", size: '100X100') %></td>  
+      <th><%= t("activerecord.attributes.item.photo") %></th><td><%= image_tag(@item.photo_url, class: "media-object thumbnail pull-left", size: '100X100') %></td>  
     </tr>
     <tr>
-      <th>物品</th><td><%= @item.title %></td>   
+      <th><%= t("activerecord.attributes.item.title") %></th><td><%= @item.title %></td>   
     </tr>
     <tr>
-      <th>狀況</th><td><%= @item.status %></td>
+      <th><%= t("activerecord.attributes.item.status") %></th><td><%= @item.status %></td>
     </tr>
     <tr>
-      <th>預售金額</th><td><%= @item.price %></td>
+      <th><%= t("activerecord.attributes.item.price") %></th><td><%= @item.price %></td>
     </tr>  
     <tr>
-      <th>補充</th><td><%= truncate(@item.description, length: 50) %></td>
+      <th><%= t("activerecord.attributes.item.description") %></th><td><%= truncate(@item.description, length: 50) %></td>
     </tr>
     <tr>
-      <th>張貼時間</th><td><%= time_ago_in_words(@item.created_at) %></td>
+      <th><%= t("item.create_time") %></th><td><%= time_ago_in_words(@item.created_at) %></td>
     </tr>
   </table>
 </div>

@@ -3,3 +3,5 @@
 
 en:
   hello: "Hello world"
+item:
+  create_time: 'Create time'

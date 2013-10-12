@@ -196,7 +196,7 @@ zh-TW:
   activerecord:
     errors:
       <<: *errors
-
+  
   # Devise translation    
   errors:
     messages:
@@ -252,3 +252,17 @@ zh-TW:
         subject: '重設密碼步驟'
       unlock_instructions:
         subject: '解鎖步驟'
+
+  activerecord: 
+    attributes:
+      item:
+        title: '商品名稱'
+        price: '商品價格'
+        status: '商品狀況'
+        description: '商品狀況'
+        photo: '照片'
+  item:
+    create_time: '建立時間'
+
+
+
