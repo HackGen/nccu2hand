@@ -11,17 +11,6 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20131012022114) do
-
-  create_table "items", :force => true do |t|
-    t.string   "title"
-    t.string   "desciption"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-=======
 ActiveRecord::Schema.define(:version => 20131012025851) do
 
   create_table "items", :force => true do |t|
@@ -36,7 +25,6 @@ ActiveRecord::Schema.define(:version => 20131012025851) do
 
   add_index "items", ["user_id"], :name => "index_items_on_user_id"
 
->>>>>>> development
   create_table "users", :force => true do |t|
     t.string   "email",                                :default => "", :null => false
     t.string   "encrypted_password",                   :default => "", :null => false
