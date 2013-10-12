@@ -7,7 +7,7 @@
   <span class="price">[預售金額] <%= item.price %></span>
   <span class="description">[補充] <%= truncate(item.description, length: 50) %></span>
   <span class="timestamp">
-    <%= item.user.email %>
+    <%= item.user.email.split('@').first %>
     張貼在 <%= time_ago_in_words(item.created_at) %> 之前.
   </span>
   <% if item.user == current_user %>

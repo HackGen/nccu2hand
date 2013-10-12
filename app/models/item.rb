@@ -1,6 +1,6 @@
 class Item < ActiveRecord::Base
   mount_uploader :photo, ItemUploader
-  attr_accessible :description, :price, :status, :title, :photo
+  attr_accessible :description, :price, :status, :title, :photo, :category_id
   belongs_to :user
   belongs_to :category
 
