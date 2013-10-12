@@ -8,28 +8,9 @@
 	  </div>
 	</div>
 <% else %>
-<!-- 	<div class="span12">
-	<%= link_to '新增', new_item_path, :class => 'btn' %>
-			<ul>
-			<div class="items">
-				<li>
-				<div class="media">
-	    	<%= link_to image_tag('sample.jpeg', class: "media-object thumbnail pull-left", size: '80x80') %>
-	   	  <div class="media-body">
-	      <span class="media-heading">[物品] Title</span>
-	      <span class="condition">[狀況] Condition</span>
-	      <span class="price">[預售金額] Price</span>
-	      <span class="description">[補充] <%= truncate("Description", length: 50) %></span>
-	      <span class="timestamp">
-	        User
-	        張貼在 Time 之前.
-	      </span>
-	      </div>
-		  	</li>
-		  </div>
-	  	</ul>
-	</div> -->
   <div class="span12">
+  <%= link_to "test", '#',class: "btn btn-info" %>
+  <%= link_to "test2", '#',class: "btn btn-info" %>
   <ul>
 		<div class="items">
 		<% if not @items.empty? %>

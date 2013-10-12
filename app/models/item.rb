@@ -13,4 +13,13 @@ class Item < ActiveRecord::Base
   validates :category_id, presence: true;
 
   default_scope -> { order('created_at DESC') }
+    
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['title LIKE ?', "%#{search}%"])
+    else
+      find(:all)
+    end
+  end 
+  
 end

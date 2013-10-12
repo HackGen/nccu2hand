@@ -1,9 +1,9 @@
 class ItemsController < ApplicationController
   
   def index
-    @items = Item.all
+    @items = Item.search(params[:search])
   end
-
+  
   def new
     @item = current_user.items.build
     @categories = Category.all
@@ -33,4 +33,5 @@ class ItemsController < ApplicationController
 
     redirect_to :root
   end  
+
 end
