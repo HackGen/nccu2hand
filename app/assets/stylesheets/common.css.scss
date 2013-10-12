@@ -2,6 +2,13 @@
 @import "twitter/bootstrap";
 @import "bootstrap-override";
 
+/* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+$grayLight: #d3d3d3;
+$darkGray: #A9A9A9;
+
+
 .social{
    float:left;
    width: 90px;
@@ -60,4 +67,47 @@ body {
 .custom-hero {
   border-radius: 0;
   color: black;
+}
+
+/* Items */
+
+.items {
+  margin: 10px 0 0 -25px;
+  list-style-type: none;
+
+  li {
+    padding: 10px 10px;
+    border-top: 2px solid #7F8C8D;
+
+    background: #f4f4f4;
+    background: linear-gradient(#fff, #eee);
+    
+  }
+
+  .thumbnail {
+    margin-right: 15px;
+  }
+
+  .media-body {
+
+    .media-heading {
+      font-weight: bold;
+    }
+
+    .condition {
+      display: block;
+    }
+
+    .price {
+      display: block;
+    }
+
+    .description {
+      display: block;
+    }
+
+    .timestamp {
+      color: #7F8C8D;
+    }
+  }
 }
