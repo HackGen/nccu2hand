@@ -3,7 +3,7 @@
 		<div class="items">
 			<li>
 			<div class="media">
-    	<%= link_to image_tag('sample.jpeg', class: "media-object thumbnail pull-left", size: '80x80') %>
+    	<%= link_to image_tag('sample.jpeg', class: "media-object thumbnail pull-left", size: '80x80'), item_path(item) %>
    	 <div class="media-body"> 
      <span class="media-heading">[物品]<%= item.title %></span>
       <span class="condition">[狀況]<%= item.status %></span>
