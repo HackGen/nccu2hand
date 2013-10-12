@@ -12,6 +12,10 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
   
   has_many :items
+  has_many :reverse_relationships, foreign_key: "followed_id",
+                                   class_name:  "Relationship",
+                                   dependent:   :destroy
+  has_many :followed_items, through: :reverse_relationships, source: :item
 
   def admin?
     Setting.admin_emails.include?(email)

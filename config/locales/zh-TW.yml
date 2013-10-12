@@ -259,8 +259,8 @@ zh-TW:
         title: '商品名稱'
         price: '商品價格'
         status: '商品狀況'
-        description: '商品狀況'
-        photo: '照片'
+        description: '商品描述'
+        photo: '商品圖'
   item:
     create_time: '建立時間'
     is_interested: '有興趣'

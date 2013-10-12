@@ -7,4 +7,5 @@ Nccu2hand::Application.routes.draw do
   
   resources :items
 
+  resources :relationships, only: [:create, :destroy]
 end

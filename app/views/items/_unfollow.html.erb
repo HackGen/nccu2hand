@@ -1,0 +1,4 @@
+<%= form_for(@item.relationships.find_by_followed_id(current_user),
+             html: { method: :delete }) do |f| %>
+  <%= f.submit "沒興趣了", class: "btn" %>
+<% end %>

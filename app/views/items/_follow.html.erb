@@ -1,0 +1,4 @@
+<%= form_for(@item.relationships.build(item_id: @item.id)) do |f| %>
+  <div><%= f.hidden_field :item_id %></div>
+  <%= f.submit "我有興趣", class: "btn btn-primary" %>
+<% end %>

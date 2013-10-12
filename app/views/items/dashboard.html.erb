@@ -1,11 +1,35 @@
   <div class="span12">
 	  <ul>
 			<div class="items">
-			<% if not @items.empty? %>
-		 		<%= render :partial => "items/item", :collection => @items, :as => :item %>
-			<% else %>
-				<h3>目前還未新增商品</h3>
-			<% end %>
+				<h3>其他使用者感興趣的商品</h3>
+					<% @user_items.each do |item| %>
+						<table class="table table-hover">
+						<tr>
+							<th>商品名稱</th>
+							<td><%= item.title %></td>
+						</tr>
+						<tr>
+							<th>感興趣的使用者</th>
+							<td>
+								<% item.followed_users.each do |user| %>
+									<%= user.email %> | 
+								<% end %>
+							</td>
+						</tr>
+						</table>
+					<% end %>
+				<h3>感興趣的商品</h3>
+				<% if not @user_followed_items.empty? %>
+					<%= render :partial => "items/item", :collection => @user_followed_items, :as => :item %>
+				<% else %>
+					<p>目前還未有感興趣的商品</p>
+				<% end %>
+				<h3>販賣中的商品</h3>
+				<% if not @user_items.empty? %>
+			 		<%= render :partial => "items/item", :collection => @user_items, :as => :item %>
+				<% else %>
+					<p>目前還未有新增的商品</p>
+				<% end %>
 		 	</div>
 	  </ul>
   </div>

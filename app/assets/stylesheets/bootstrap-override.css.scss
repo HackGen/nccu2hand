@@ -14,6 +14,10 @@ table {
   background: white;
   box-shadow: 2px 2px 2px rgba(20%, 20%, 40%, 0.5);
 
+  th {
+    width: 25%;
+  }
+
   td {
     border-left: 2px dotted #ccc;
   }

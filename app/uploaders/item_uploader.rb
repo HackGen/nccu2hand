@@ -9,6 +9,10 @@ class ItemUploader < CarrierWave::Uploader::Base
     process :resize_to_fill => [80, 80]
   end
 
+  version :normal do
+    process :resize_to_fill => [350, 350]
+  end
+
   # include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:

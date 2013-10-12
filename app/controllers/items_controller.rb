@@ -24,7 +24,8 @@ class ItemsController < ApplicationController
   end 
   
   def dashboard
-    @items = Item.where(user_id: current_user.id)   
+    @user_items = Item.where(user_id: current_user.id)
+    @user_followed_items = current_user.followed_items
   end  
 
   def destroy
@@ -32,5 +33,5 @@ class ItemsController < ApplicationController
     @item.destroy
 
     redirect_to :root
-  end  
+  end 
 end
