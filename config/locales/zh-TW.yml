@@ -263,6 +263,7 @@ zh-TW:
         photo: '照片'
   item:
     create_time: '建立時間'
+    is_interested: '有興趣'
 
 
 
