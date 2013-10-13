@@ -196,7 +196,7 @@ zh-TW:
   activerecord:
     errors:
       <<: *errors
-  
+      
   # Devise translation    
   errors:
     messages:

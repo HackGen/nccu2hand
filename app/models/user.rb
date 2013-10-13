@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
+         # :confirmable
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
@@ -16,6 +17,9 @@ class User < ActiveRecord::Base
                                    class_name:  "Relationship",
                                    dependent:   :destroy
   has_many :followed_items, through: :reverse_relationships, source: :item
+
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@nccu.edu.tw/i
+  validates_format_of :email, with: VALID_EMAIL_REGEX
 
   def admin?
     Setting.admin_emails.include?(email)
