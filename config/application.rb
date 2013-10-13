@@ -58,5 +58,7 @@ module Nccu2hand
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.assets.precompile += %w[common.css.scss]
   end
 end
