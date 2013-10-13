@@ -1,6 +1,6 @@
 defaults: &defaults
   app_name: "NCCU2HAND"
-  domain: "http://localhost:3000/"    
+  domain: "http://nccu2hand.herokuapp.com/"    
   facebook_app_id: 
   facebook_secret: 
   hipchat_token: 
