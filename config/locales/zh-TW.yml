@@ -256,6 +256,7 @@ zh-TW:
   activerecord: 
     attributes:
       item:
+        category: '商品類別'
         title: '商品名稱'
         price: '商品價格'
         status: '商品狀況'
